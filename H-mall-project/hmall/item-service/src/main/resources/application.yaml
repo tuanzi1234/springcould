@@ -12,7 +12,7 @@ spring:
     password: ${hm.db.pw}
   cloud:
     nacos:
-      server-addr: 172.23.100.71:8848
+      server-addr: 172.22.143.91:8848
 mybatis-plus:
   configuration:
     default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
@@ -42,3 +42,6 @@ knife4j:
         api-rule: package
         api-rule-resources:
           - com.hmall.item.controller
+feign:
+  okhttp:
+    enabled: true
