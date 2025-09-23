@@ -1,18 +1,14 @@
 server:
   port: 8080
-spring:
-  application:
-    name: gateway
-  cloud:
-    nacos:
-      server-addr: 172.22.143.91:8848
-    gateway:
-      routes:
-        - id: item-service
-          uri: lb://item-service
-          predicates:
-            - Path=/items/**,/search/**
-        - id: user-service
-          uri: lb://user-service
-          predicates:
-            - Path=/addresses/**,/users/**
+hm:
+  jwt:
+    location: classpath:hmall.jks
+    alias: hmall
+    password: hmall123
+    tokenTTL: 30m
+  auth:
+    excludePaths:
+      - /search/**
+      - /users/login
+      - /items/**
+      - /hi
