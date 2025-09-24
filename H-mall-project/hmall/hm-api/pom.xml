@@ -22,6 +22,10 @@
             <artifactId>hm-common</artifactId>
             <version>1.0.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
         <!-- OpenFeign -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
