@@ -7,3 +7,10 @@ hm:
     title: 黑马商城交易管理接口文档
     description: "黑马商城交易管理接口文档"
     package: com.hmall.trade.controller
+spring:
+  rabbitmq:
+    host: 192.168.3.54
+    port: 5672
+    virtual-host: /hmall
+    username: root1
+    password: 123

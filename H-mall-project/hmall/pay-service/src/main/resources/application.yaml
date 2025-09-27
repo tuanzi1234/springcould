@@ -2,7 +2,7 @@ server:
   port: 8086
 spring:
   application:
-    name: trade-service
+    name: pay-service
   profiles:
     active: dev
   datasource:
@@ -13,6 +13,12 @@ spring:
   cloud:
     nacos:
       server-addr: 192.168.3.54:8848
+  rabbitmq:
+    host: 192.168.3.54
+    port: 5672
+    virtual-host: /hmall
+    username: root1
+    password: 123
 mybatis-plus:
   configuration:
     default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler

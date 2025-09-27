@@ -34,6 +34,6 @@ public class OrderController {
     @ApiImplicitParam(name = "orderId", value = "订单id", paramType = "path")
     @PutMapping("/{orderId}")
     public void markOrderPaySuccess(@PathVariable("orderId") Long orderId) {
-        orderService.markOrderPaySuccess(orderId);
+
     }
 }
