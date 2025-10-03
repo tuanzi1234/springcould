@@ -5,3 +5,8 @@
 - Nacos
 - OpenFeign
 - 网关
+- senta
+- sentinel
+- rabbitMQ
+- redis
+- elasticSearch
